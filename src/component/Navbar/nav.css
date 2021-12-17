@@ -5,13 +5,9 @@
 }
 .header
 {
-    position: relative;
+    position: fixed !important;
     /* font-family: 'Baloo Bhaijaan 2', cursive !important; */
     font-family: 'Open Sans', sans-serif;
-    position: fixed;
-    left: 10;
-    top: 20;
-    right: 10;
     height: 100px;
     top: 0px;
     right: 0px;

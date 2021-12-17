@@ -63,11 +63,12 @@ function App() {
     
 
     const toggleBackground = () => {
-        if(window.scrollY >= 60 ) {
+        if(window.scrollY >= 100 ) {
             setNavScroll(true)
         } else {
             setNavScroll(false)
         }
+        console.log(navScroll)
     }
 
     setTimeout(() => {
@@ -94,7 +95,7 @@ function App() {
         }
     }
     const app = (
-        <div className={loading ? 'app active' : 'app'}  data-aos="fade-up">
+        <div className='app'>
                 <BrowserRouter>
                     <Navbar 
                         goTOContactSection={goTOContactSection}
@@ -112,8 +113,8 @@ function App() {
                         homeSection={homeSection}
                         blogSection={blogSection} 
                         aboutSection={aboutSection}  
-                        portfolioSection={portfolioSection} 
-                        goTOAboutSection={goTOAboutSection}  
+                        portfolioSection={portfolioSection}  
+                        contactSection={contactSection}  
                         fetchersSection={fetchersSection} /> 
         </div>
     )
